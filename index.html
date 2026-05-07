@@ -663,7 +663,7 @@
 
   <div class="hero-stats">
     <div class="stat-item">
-      <span class="stat-num" id="buyer-count">512</span>
+      <span class="stat-num" id="buyer-count">48</span>
       <span class="stat-label">누적 구매자</span>
     </div>
     <div class="stat-divider"></div>
@@ -1034,18 +1034,6 @@
 
     tick();
     setInterval(tick, 1000);
-  })();
-
-  // BUYER COUNT — slowly increments
-  (function() {
-    let count = 1247;
-    const el = document.getElementById('buyer-count');
-    setInterval(() => {
-      if (Math.random() < 0.3) {
-        count++;
-        el.textContent = count.toLocaleString();
-      }
-    }, 8000);
   })();
 
   // ONLINE NOW — random fluctuation
